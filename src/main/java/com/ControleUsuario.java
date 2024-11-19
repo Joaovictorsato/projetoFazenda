@@ -4,6 +4,7 @@
  */
 package com;
 
+import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -25,13 +26,12 @@ public class ControleUsuario {
         Usuario user = new Usuario(userName, loginUser, password);
         Dao<Usuario> dao= new Dao(Usuario.class);
         dao.inserir(user);
+       
     }
     
     @FXML
-    private void cancelar(){
-        nome.clear();
-        login.clear();
-        senha.clear();
+    private void cancelar()throws IOException{
+        App.setRoot("menu");
         
     }
 }

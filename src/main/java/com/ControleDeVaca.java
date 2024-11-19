@@ -4,6 +4,7 @@
  */
 package com;
 
+import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
@@ -28,10 +29,8 @@ public class ControleDeVaca {
     }
     
     @FXML
-    private void cancelar(){
-        brinco.clear();
-        nome.clear();
-        raca.clear();
+    private void cancelar()throws IOException{
+        App.setRoot("menu");
         
     }
 }

@@ -5,25 +5,23 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ControleMenu">
    <children>
       <MenuBar layoutX="7.0" layoutY="14.0" prefHeight="25.0" prefWidth="573.0">
         <menus>
           <Menu fx:id="Usuario" mnemonicParsing="false" text="Usuario">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu fx:id="Vaca" mnemonicParsing="false" text="Vaca">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
+               <items>
+                  <MenuItem fx:id="botaoUsuario" mnemonicParsing="false" onAction="#usuario" text="Abrir Usuario" />
+               </items></Menu>
+          <Menu fx:id="Vaca" mnemonicParsing="false" onAction="#vaca" text="Vaca">
+               <items>
+                  <MenuItem fx:id="botaoVaca" mnemonicParsing="false" onAction="#vaca" text="Abrir Vaca" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Producao">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#producao" text="Abrir Tela Producao" />
+              </items>
+            </Menu>
         </menus>
       </MenuBar>
    </children>

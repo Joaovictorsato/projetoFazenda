@@ -1,7 +1,9 @@
 com\ControleUsuario.class
-com\Usuario.class
+com\Producao.class
 com\App.class
-com\Vaca.class
 com\ControleDeVaca.class
-com\ControleMenu.class
 com\Dao.class
+com\ControleProducao.class
+com\Usuario.class
+com\Vaca.class
+com\ControleMenu.class
