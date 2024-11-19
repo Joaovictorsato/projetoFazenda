@@ -36,9 +36,9 @@ public class DaoTest {
     
 //    @Test
 //    public void testExcluir(){
-//        Dao<Vaca> dao = new Dao(Vaca.class);
+//        Dao<Usuario> dao = new Dao(Usuario.class);
 //        // boolean result = dao.excluir("brinco", "15"); / para dar errado 
-//        boolean result = dao.excluir("brinco", "A1");  // para dar certo
+//        boolean result = dao.excluir("carlos", "555");  // para dar certo
 //        System.out.println(result);
 //    }
     
