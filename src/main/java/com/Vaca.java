@@ -46,5 +46,9 @@ public class Vaca {
     public void setRaca(String raca) {
         this.raca = raca;
     }
-    
+
+    @Override
+    public String toString(){
+        return brinco;
+    }
 }
