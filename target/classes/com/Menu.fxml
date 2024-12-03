@@ -23,6 +23,11 @@
                 <MenuItem mnemonicParsing="false" onAction="#producao" text="Abrir Tela Producao" />
               </items>
             </Menu>
+            <Menu mnemonicParsing="false" text="Usuario">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#alterarUsuario" text="Alterar" />
+              </items>
+            </Menu>
         </menus>
       </MenuBar>
    </children>

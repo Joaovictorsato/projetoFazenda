@@ -17,4 +17,8 @@ public class ControleMenu {
     public void producao()throws IOException{
         App.setRoot("TelaProducao");
     }
+    @FXML 
+    public void alterarUsuario() throws IOException{ 
+        App.setRoot("TelaAlterarUsuario");
+    }
 }

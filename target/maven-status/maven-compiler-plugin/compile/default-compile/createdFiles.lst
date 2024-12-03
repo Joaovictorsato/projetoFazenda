@@ -1,5 +1,6 @@
 com\ControleUsuario.class
 com\Producao.class
+com\AlterarCadastroUsuario.class
 com\LoginControle.class
 com\App.class
 com\ControleDeVaca.class
