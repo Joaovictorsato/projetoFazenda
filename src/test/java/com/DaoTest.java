@@ -26,10 +26,10 @@ public class DaoTest {
     
     @Test
     public void testListar(){
-        Dao<Producao> dao = new Dao(Producao.class);
-        List<Producao> lista = dao.listarTodos(); 
-        for (Producao v : lista){
-            System.out.println(v.getQuantidade() + " " + v.getData());
+        Dao<Usuario> dao = new Dao(Usuario.class);
+        List<Usuario> lista = dao.listarTodos(); 
+        for (Usuario v : lista){
+            System.out.println(v.getLogin() + " " + v.getSenha());
         }
     }
     

@@ -48,8 +48,10 @@ public class ControleProducao {
         Vaca combVaca = comboVaca.getValue();
         LocalDate diaData = data.getValue();
         String quantiaLitros = quantidade.getText();
+        
         if(combVaca == null||diaData == null||quantiaLitros.isEmpty()){
         Alerta("ERRO", "campos nao podem estar vazios.");
+        
     } else{
             String dataFormatada = diaData.toString();
             int quantidade = Integer.parseInt(quantiaLitros);

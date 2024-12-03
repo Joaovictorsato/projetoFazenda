@@ -9,10 +9,11 @@
    <children>
       <MenuBar layoutX="7.0" layoutY="14.0" prefHeight="25.0" prefWidth="573.0">
         <menus>
-          <Menu fx:id="Usuario" mnemonicParsing="false" text="Usuario">
-               <items>
-                  <MenuItem fx:id="botaoUsuario" mnemonicParsing="false" onAction="#usuario" text="Abrir Usuario" />
-               </items></Menu>
+            <Menu mnemonicParsing="false" text="opçao">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#usuario" text="sair" />
+              </items>
+            </Menu>
           <Menu fx:id="Vaca" mnemonicParsing="false" onAction="#vaca" text="Vaca">
                <items>
                   <MenuItem fx:id="botaoVaca" mnemonicParsing="false" onAction="#vaca" text="Abrir Vaca" />

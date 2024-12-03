@@ -20,24 +20,27 @@ public class ControleUsuario {
     private TextField senha; 
     
     @FXML
-    private void gravar(){
+    private void gravar()throws IOException{
+        Dao<Usuario> dao= new Dao(Usuario.class);
         String userName = nome.getText();
         String loginUser = login.getText();
         String password = senha.getText();
         if(userName.isEmpty()||loginUser.isEmpty()||password.isEmpty()){
             Alerta("ERRO", "Todos os campos devem ser preenchidos.");
         }
+        else if(dao.buscarPorChave("login", login.getText())!=null){
+        Alerta("ERRO", "Usuario ja existente");
+      }
         else{
         Usuario user = new Usuario(userName, loginUser, password);
-        Dao<Usuario> dao= new Dao(Usuario.class);
         dao.inserir(user);
-        limpar();
+        App.setRoot("TelaLogin");
         }
     }
     
     @FXML
     private void cancelar()throws IOException{
-        App.setRoot("menu");
+        App.setRoot("TelaLogin");
         
     }
     private void Alerta(String titulo, String mensagem){
