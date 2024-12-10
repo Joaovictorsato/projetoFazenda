@@ -1,4 +1,5 @@
 com\ControleUsuario.class
+com\ExcluirCadastroUsuario.class
 com\Producao.class
 com\AlterarCadastroUsuario.class
 com\LoginControle.class

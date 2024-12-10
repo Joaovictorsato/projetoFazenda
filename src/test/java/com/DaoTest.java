@@ -34,13 +34,14 @@ public class DaoTest {
     }
     
     
-//    @Test
-//    public void testExcluir(){
-//        Dao<Usuario> dao = new Dao(Usuario.class);
-//        // boolean result = dao.excluir("brinco", "15"); / para dar errado 
-//        boolean result = dao.excluir("carlos", "555");  // para dar certo
-//        System.out.println(result);
-//    }
+    @Test
+    public void testExcluir(){
+        Dao<Usuario> dao = new Dao(Usuario.class);
+        // boolean result = dao.excluir("brinco", "15"); / para dar errado 
+        boolean result = dao.excluir("senha", "astolfo");  // para dar certo
+        System.out.println(result);
+        
+    }
     
     
 }
