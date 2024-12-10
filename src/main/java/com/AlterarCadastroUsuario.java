@@ -13,10 +13,12 @@ import javafx.scene.control.TextField;
 
 public class AlterarCadastroUsuario {
     private Dao <Usuario> daoUser;
-    private Usuario us = new Usuario();
+    private Usuario us;
     
      @FXML
-    private ComboBox <Usuario> comboUser;  @FXML
+    private ComboBox <Usuario> comboUser;  
+     
+     @FXML
     private TextField atualLogin;
     
     @FXML
@@ -43,14 +45,15 @@ public class AlterarCadastroUsuario {
    
     @FXML
     public void atualizarLogin(){
-        
-        
-        
-        
-        
-        
-        
-        
+        if(novoNome.getText().isEmpty()|| novaSenha.getText().isEmpty()){
+            Alerta("Erro","todos os campos devem ser preenchidos");
+        }
+        else{
+           us.setNome(novoNome.getText());
+           us.setSenha(novaSenha.getText());
+           daoUser.alterar("login", us.getLogin(), us);
+           Alerta("sucesso", "os campos foram alterados");
+}
     }
     
      @FXML

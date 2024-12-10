@@ -21,4 +21,8 @@ public class ControleMenu {
     public void alterarUsuario() throws IOException{ 
         App.setRoot("TelaAlterarUsuario");
     }
+    @FXML
+    public void excluirUsuario() throws IOException{
+        App.setRoot("telaExcluirUsuario");
+    }
 }

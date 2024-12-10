@@ -26,6 +26,7 @@
             <Menu mnemonicParsing="false" text="Usuario">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#alterarUsuario" text="Alterar" />
+                  <MenuItem mnemonicParsing="false" onAction="#excluirUsuario" text="excluir" />
               </items>
             </Menu>
         </menus>
