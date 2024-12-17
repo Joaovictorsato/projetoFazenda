@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AlterarCadastroVaca">
+   <children>
+      <ComboBox fx:id="comboVaca" layoutX="197.0" layoutY="77.0" onAction="#atualizarCampo" prefWidth="150.0" />
+      <TextField fx:id="nomeVaca" layoutX="209.0" layoutY="137.0" />
+      <TextField fx:id="racaDaVaca" layoutX="198.0" layoutY="267.0" />
+      <Label layoutX="118.0" layoutY="141.0" text="nome da vaca" />
+      <Label layoutX="144.0" layoutY="81.0" text="Brinco" />
+      <Label layoutX="110.0" layoutY="262.0" text="alterar raça" />
+      <Button layoutX="335.0" layoutY="324.0" mnemonicParsing="false" onAction="#atualizarVaca" text="alterar" />
+      <Button layoutX="118.0" layoutY="324.0" mnemonicParsing="false" onAction="#cancelar" text="cancelar" />
+      <Label layoutX="110.0" layoutY="200.0" text="alterar nome" />
+      <TextField fx:id="alterarNomeVaca" layoutX="198.0" layoutY="196.0" />
+   </children>
+</AnchorPane>

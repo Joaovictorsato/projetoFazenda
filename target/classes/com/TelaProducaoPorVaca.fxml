@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ListarProducaoPorVaca">
+   <children>
+      <Label layoutX="96.0" layoutY="85.0" text="Brinco" />
+      <ComboBox fx:id="comboVaca" layoutX="150.0" layoutY="81.0" prefWidth="150.0" />
+      <TableView fx:id="tabelaProducao" layoutX="130.0" layoutY="146.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="338.0" layoutY="81.0" mnemonicParsing="false" onAction="#atualizarCampos" text="buscar" />
+      <Button layoutX="37.0" layoutY="361.0" mnemonicParsing="false" onAction="#cancelar" text="Voltar" />
+   </children>
+</AnchorPane>

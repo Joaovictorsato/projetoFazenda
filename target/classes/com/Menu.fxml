@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ControleMenu">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ControleMenu">
    <children>
       <MenuBar layoutX="7.0" layoutY="14.0" prefHeight="25.0" prefWidth="573.0">
         <menus>
@@ -17,10 +20,15 @@
           <Menu fx:id="Vaca" mnemonicParsing="false" onAction="#vaca" text="Vaca">
                <items>
                   <MenuItem fx:id="botaoVaca" mnemonicParsing="false" onAction="#vaca" text="Abrir Vaca" />
+                  <MenuItem mnemonicParsing="false" onAction="#alterarVaca" text="Alterar Vaca" />
+                  <MenuItem mnemonicParsing="false" onAction="#excluirVaca" text="Excluir Vaca" />
                </items></Menu>
             <Menu mnemonicParsing="false" text="Producao">
               <items>
                 <MenuItem mnemonicParsing="false" onAction="#producao" text="Abrir Tela Producao" />
+                  <MenuItem mnemonicParsing="false" onAction="#producaoMensal" text="Produção Mensal" />
+                  <MenuItem mnemonicParsing="false" onAction="#producaoDia" text="Producao Diaria" />
+                  <MenuItem mnemonicParsing="false" onAction="#producaoPorVaca" text="Producao por Vaca" />
               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Usuario">

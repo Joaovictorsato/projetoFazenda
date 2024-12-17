@@ -16,13 +16,17 @@ public class LoginControle {
     
     @FXML
     public void logar()throws IOException{
-
+        
       Dao<Usuario> dao = new Dao (Usuario.class);
-      if(dao.buscarPorChave("login", nome.getText())==null || dao.buscarPorChave("senha", senha.getText())==null){
+      Usuario usuario = dao.buscarPorChave("login", nome.getText());
+      if(dao.buscarPorChave("login", nome.getText())==null||dao.buscarPorChave("senha", senha.getText())==null){
        Alerta("Erro", "Usuario ja existente");
       }
       else if (nome.getText().isEmpty()|| senha.getText().isEmpty()){
           Alerta("ERRO", "campos nao podem estar vazios");
+      }
+      else if(!usuario.getSenha().equals(senha.getText())){
+          Alerta ("Erro", "Senha incorreta");
       }
       else {
           App.setRoot("Menu");

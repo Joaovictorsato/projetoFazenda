@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ExcluirCadastroVaca">
+   <children>
+      <Label layoutX="114.0" layoutY="171.0" text="Brinco" />
+      <ComboBox fx:id="comboVaca" layoutX="186.0" layoutY="167.0" prefWidth="150.0" />
+      <Button layoutX="336.0" layoutY="274.0" mnemonicParsing="false" onAction="#excluir" text="excluir" />
+      <Button layoutX="105.0" layoutY="287.0" mnemonicParsing="false" onAction="#cancelar" text="cancelar" />
+   </children>
+</AnchorPane>

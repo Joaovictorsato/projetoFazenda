@@ -33,9 +33,17 @@ public class ExcluirCadastroUsuario {
     
     @FXML
     public void excluir(){
+        if(dao.buscarPorChave("senha", senha.getText())==null){
+            Alerta("Erro","senha incorreta");
+        }
+        else if(senha.getText().isEmpty()){
+            Alerta("Erro", "senha vazia");
+        }
+        else{
      usuario = comboUser.getValue();
      dao.excluir("login", usuario.getLogin());
-    
+     Alerta("Sucesso","excluido com sucesso");
+     }
 }
     @FXML
     public void cancelar()throws IOException{

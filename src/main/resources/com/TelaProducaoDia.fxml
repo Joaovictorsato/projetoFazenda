@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ListarProducaoDia">
+   <children>
+      <Label layoutX="146.0" layoutY="67.0" text="dia" />
+      <TableView fx:id="tabelaProducao" layoutX="133.0" layoutY="122.0" prefHeight="200.0" prefWidth="293.0" />
+      <Button layoutX="34.0" layoutY="334.0" mnemonicParsing="false" onAction="#voltar" text="voltar" />
+      <Button layoutX="374.0" layoutY="63.0" mnemonicParsing="false" onAction="#atualizarCampos" text="atualizar" />
+      <TextField fx:id="dia" layoutX="182.0" layoutY="63.0" />
+   </children>
+</AnchorPane>

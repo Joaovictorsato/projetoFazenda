@@ -25,4 +25,26 @@ public class ControleMenu {
     public void excluirUsuario() throws IOException{
         App.setRoot("telaExcluirUsuario");
     }
+     @FXML 
+    public void alterarVaca() throws IOException{ 
+        App.setRoot("TelaAlterarVaca");
+    }
+    @FXML 
+    public void excluirVaca() throws IOException{ 
+        App.setRoot("TelaExcluirVaca");
+    }
+    
+   @FXML 
+    public void producaoMensal() throws IOException{ 
+        App.setRoot("TelaProducaoMensal");
+    }
+    
+     @FXML 
+    public void producaoDia() throws IOException{ 
+        App.setRoot("TelaProducaoDia");
+    }
+       @FXML 
+    public void producaoPorVaca() throws IOException{ 
+        App.setRoot("TelaProducaoPorVaca");
+    }
 }
